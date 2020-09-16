@@ -2,11 +2,15 @@
 require 'pry'
 
 def prime?(number)
-  range = (1..number).to_a
-  prime = true
+  range = (1..number-1).to_a
+  
   if number < 1
     return false
   end
-  range.
-  
+  range.each do |num|
+    if number % num == 0
+      return false
+    end
+  end
+  true
 end
