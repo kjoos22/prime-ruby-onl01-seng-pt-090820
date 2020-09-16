@@ -3,9 +3,10 @@ require 'pry'
 
 def prime?(number)
   range = (1..number).to_a
-  binding.pry
+  prime = true
   if number < 1
     return false
   end
+  range.
   
 end
